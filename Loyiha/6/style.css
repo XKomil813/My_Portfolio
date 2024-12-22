@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+.p_1 {
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+}
+
+.p_2 {
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+    color: #d3d3d3;
+}
+
+i {
+    color: #d1d1d1;
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    color: #FF5353;
+}
+
+.fa-comment:hover {
+    color: #FFBD3D;
+}
+
+.fa-share:hover, .fa-bookmark:hover {
+    color: #5D94FF;
+}
+
+.fa-bookmark {
+    position: relative;
+    left: 270px;
+}
+
+.text_1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#parent_card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bnt a button {
+    padding: 10px;
+}

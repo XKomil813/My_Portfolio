@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background: #89898921;
+    width: 280px;
+    height: 420px;
+    margin-top: 50px;
+}
+
+img {
+    transform: translate(0, -28px);
+    text-align: center;
+}
+
+.text_grey {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.text_black {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+button {
+    color: #fff;
+    background-color: #4A9C80;
+    border: none;
+    padding: 0 10px 0;
+    border-radius: 3px;
+}
+
+#parent_card {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.rasm_3 {
+    transform: translate(0,-70px);
+}

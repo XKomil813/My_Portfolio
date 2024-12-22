@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./image\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+menu {
+    display: flex;
+    color: #fff;
+} 
+
+.end {
+    display: flex;
+    align-items: center;
+    margin-left: 1200px;
+}
+
+.btn_1 {
+    border: none;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 0 10px;
+    color: coral;
+    border-radius: 8px;
+}
+
+nav {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+nav h1 {
+    font-size: 75px;
+    display: block;
+    position: relative;
+    left: 280px;
+}
+
+nav p {
+    position: relative;
+    top: 80px;
+    right: 120px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    left: 600px;
+    bottom: 170px;
+}
+
+.btn_2 {
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    background-color: #FF3333;
+    border-radius: 8px;
+    position: relative;
+    left: 600px;
+    bottom: 170px;
+}
+
+button:active {
+    opacity: 0.9;
+}
+
+input:active {
+    border: none;
+}
+
+.img_1 {
+    position: absolute;
+    top: 100px;
+    animation-name: img_1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.img_2 {
+    position: absolute;
+    top: 500px;
+    animation-name: img_2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.img_3 {
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    animation-name: img_3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.img_4 {
+    position: absolute;
+    top: 500px;
+    right: 300px;
+    animation-name: img_4;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img_1 {
+    25% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(-75deg);
+    }
+}
+
+@keyframes img_2 {
+    0% {
+        width: 150px;
+    }
+    25% {
+        transform: rotate(25deg);
+        width: 180px;
+    }
+
+    50% {
+        transform: rotate(-75deg);
+        width: 150px;
+    }
+
+    100% {
+        width: 180px;
+    }
+}
+
+@keyframes img_3 {
+    25% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(-75deg);
+    }
+}
+
+@keyframes img_4 {
+    0% {
+        width: 130px;
+    }
+    25% {
+        transform: rotate(25deg);
+        width: 150px;
+    }
+
+    50% {
+        transform: rotate(-75deg);
+        width: 130px;
+    }
+
+    100% {
+        width: 150px;
+    }
+}
+
+.btn {
+    text-align: center;
+}
+
+.bnt a button {
+    padding: 10px;
+}

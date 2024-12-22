@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.parent_card {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    border: 1px solid #4361FF4D;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+h4 {
+    padding: 10px 0;
+}
+
+.ico {
+    font-size: 18px;
+    background-color: #4361FF;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    left: 220px;
+    color: #fff;
+}
+
+.img img {
+    position: absolute;
+    left: 240px;
+    top: 0;
+}
