@@ -1,83 +1,161 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="./oila.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mening oilam</title>
+    <link rel="stylesheet" href="oila.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Umumiy stillar */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f8f8f8;
+        }
 
-    <body>
-        <div id="tepaga" class="menu">
-            <div class="container">
-                <h3>LOGO</h3>
-                <ul>
-                    <a id="tepaga" href="./index.html" class="btn_menu">
-                        <li>Men haqimda</li>
-                    </a>
-                    <a href="./oila.html" class="btn_menu_1">
-                        <li>Mening oilam</li>
-                    </a>
-                    <a href="./index.html" class="btn_menu">
-                        <li>Loyihalarim</li>
-                    </a>
-                </ul>
+        /* Menyu */
+        .menu {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu ul a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Oilam bo'limlari */
+        .container {
+            max-width: 350px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        span {
+            font-weight: bold;
+            color: #ff6600;
+        }
+
+        /* Katta ekranlar uchun */
+        @media (min-width: 768px) {
+            .menu ul {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .flex {
+                flex-direction: row;
+                text-align: left;
+                gap: 20px;
+            }
+
+            .container {
+                max-width: 600px;
+            }
+
+            img {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <h3>LOGO</h3>
+        <ul>
+            <a href="./index.html"><li>Men haqimda</li></a>
+            <a href="./oila.html"><li>Mening oilam</li></a>
+            <a href="./index.html"><li>Loyihalarim</li></a>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="flex">
+            <div>
+                <h1>Bu mening <span>Otam</span></h1>
+                <p>Bu mening otam. Otamning ismi <span>Nosir</span>. Yoshlari 39 da (1985).</p>
+            </div>
+            <img src="./Rasmlar/otam.jpg" alt="Otam">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flex">
+            <img src="./Rasmlar/oyim.jpg" alt="Onam">
+            <div>
+                <h1>Bu mening <span>Onam</span></h1>
+                <p>Bu mening onam. Onamning ismi <span>Ra'no</span>. Yoshlari 36 da (1988).</p>
             </div>
         </div>
+    </div>
 
-        <div class="father">
-            <div class="container">
-                <div class="flex">
-                    <div class="">
-                        <h1>Bu mening <span>Otam</span></h1>
-                        <p>Bu mening otam. otamning ismlari <span>Nosir</span>. Yoshlari 39 da (1985.)</p>
-                    </div>
-                    <div class="img"><img width="250px" src="/Rasmlar/otam.jpg" alt=""></div>
-                </div>
+    <div class="container">
+        <div class="flex">
+            <div>
+                <h1>Bu mening <span>Singlim</span></h1>
+                <p>Bu mening singlim. Singlimning ismi <span>Zilola</span>. Yoshi 6 da (2018). <br> U hali bog'chada o'qiydi.</p>
+            </div>
+            <img src="./Rasmlar/singlim.jpg" alt="Singlim">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flex">
+            <img src="./Rasmlar/ukam.jpg" alt="Ukam">
+            <div>
+                <h1>Bu mening <span>Ukam</span></h1>
+                <p>Bu mening ukam. Ukamning ismi <span>Odil</span>. Yoshi 10 da (2014).</p>
             </div>
         </div>
+    </div>
 
-        <div class="mother">
-            <div class="container">
-                <div class="flex_div">
-                    <div class="img_2"><img width="250px" src="./Rasmlar/oyim.jpg" alt="Bu yerda rasm bor"></div>
-                    <div class="text">
-                        <h1>Bu mening <span>Onam</span></h1>
-                        <p>Bu mening onam. onamning ismlari <span>Ra'no</span>. Yoshlari 36 da (1988.)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sister">
-            <div class="container">
-                <div class="flex">
-                    <div class="">
-                        <h1>Bu mening <span>Singlim</span></h1>
-                        <p>Bu mening singlim. singliming ismi <span>Ziloal</span>. Yoshi 6 da (2018). <br> U hali bog'chada o'qiydi.</p>
-                    </div>
-                    <div class="img"><img width="250px" src="./Rasmlar/singlim.jpg" alt="bu yerda rasm bor"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="brother">
-            <div class="container">
-                <div class="flex_div">
-                    <div class="img_2"><img width="250px" src="./Rasmlar/ukam.jpg" alt="Bu yerda rasm bor"></div>
-                    <div class="text">
-                        <h1>Bu mening <span>Ukam</span></h1>
-                        <p>Bu mening Ukam. Ukamning ismi <span>Odil</span>. Yoshi 10 da (2014)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-
-    </html>
+</body>
+</html>
